@@ -1,0 +1,41 @@
+<header class="flex flex-col justify-between items-center p-2 w-full mt-10"> 
+<nav x-data="{ mobileMenuIsOpen: false }" @click.away="mobileMenuIsOpen = false" class="flex flex-row gap-10 text-pretty-white" aria-label="menu">
+	<div class="flex flex-row gap-10">
+	<a href="/">
+		<img class="rounded-full md:w-24 md:h-24 bg-gradient-to-bl from-zinc-200 to-zinc-900 md:p-1" 
+			src="https://avatars.githubusercontent.com/u/4791857?v=4" 
+			alt="icono pedregalux" width="24" height="24">
+	</a> 
+    <div class="text-2xl font-bold md:block text-pretty-white md:py-2">
+		<a href="/" class="nonunder">
+        <p class="text-transparent bg-clip-text bg-gradient-to-tl from-zinc-100 via-zinc-400 to-zinc-100 md:text-3xl">Pedregalux</p>
+		</a>
+		<ul class="hidden items-center gap-10 md:flex opacity-90">
+			<li><a class="text-pretty-white hover:text-sky-300" href="/quiensoy">quien soy</a></li>
+			<li><a class="text-pretty-white hover:text-sky-300" href="/trabajos">trabajos</a></li>
+			<li><a class="text-pretty-white hover:text-sky-300" href="/blog">blog</a></li>
+		</ul>
+	</div>
+       
+	<!-- Desktop Menu -->
+
+	</div>
+	<!-- Mobile Menu Button -->
+	<button @click="mobileMenuIsOpen = !mobileMenuIsOpen" :aria-expanded="mobileMenuIsOpen" :class="mobileMenuIsOpen ? 'fixed top-6 right-6 z-20' : null" type="button" class="flex text-zinc-600 dark:text-zinc-300 md:hidden py-2 px-3" aria-label="mobile menu" aria-controls="mobileMenu">
+		<svg x-cloak x-show="!mobileMenuIsOpen" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
+			<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+		</svg>
+		<svg x-cloak x-show="mobileMenuIsOpen" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
+			<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+		</svg>
+	</button>
+     
+	<!-- Mobile Menu -->
+    
+	<ul x-cloak x-show="mobileMenuIsOpen" x-transition:enter="transition motion-reduce:transition-none ease-out duration-300" x-transition:enter-start="-translate-y-full" x-transition:enter-end="translate-y-0" x-transition:leave="transition motion-reduce:transition-none ease-out duration-300" x-transition:leave-start="translate-y-0" x-transition:leave-end="-translate-y-full" id="mobileMenu" class="fixed max-h-svh overflow-y-auto inset-x-0 top-0 z-10 flex flex-col divide-y divide-zinc-300 rounded-b-md border-b border-zinc-300 bg-zinc-50 px-20 pb-2 pt-20 dark:divide-zinc-700 dark:border-zinc-700 dark:bg-zinc-900 md:hidden">
+		<li><a class="text-pretty-white hover:text-sky-300" href="quiensoy">quien soy</a></li>
+        <li><a class="text-pretty-white hover:text-sky-300" href="trabajos">trabajos</a></li>
+        <li><a class="text-pretty-white hover:text-sky-300" href="blog">blog</a></li>
+	</ul>
+</nav>
+</header>

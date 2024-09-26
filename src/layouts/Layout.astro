@@ -1,50 +1,93 @@
 ---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { ViewTransitions } from 'astro:transitions';	
+
 interface Props {
-	title: string;
+	title?: string;
+	description?: string;
 }
 
-const { title } = Astro.props;
+const { title = 'Pedregalux web log', description = 'Internet ya no es el mismo' } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
+		<link rel="icon" type="image/png" href="/favicon.png" />
+		<meta name="description" content={description} />
 		<title>{title}</title>
+		<ViewTransitions transition:fade="{duration: 300}" />
 	</head>
-	<body>
+	<body class="bg-gradient-to-br from-zinc-950 via-zinc-800 to-zinc-950">
+		<Header />
 		<slot />
+		<Footer />
 	</body>
 </html>
 <style is:global>
 	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
+		color-scheme: dark;		
 	}
 	html {
 		font-family: system-ui, sans-serif;
 		background: #13151a;
 	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+	body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		font-size: 1.2rem;
+		line-height: 1.5;
 	}
+	nav {
+		font-family: Ubuntu, sans-serif;
+		font-weight: 400;
+		font-size: 1.2rem;
+	}
+	a {
+		color: white;
+		text-decoration: underline #71717a;
+		text-decoration-style: dotted;
+	}
+	.nonunder {
+		text-decoration: none;
+	}
+	a:hover {
+		color: #7dd3fc;
+	}
+	.cuerpo {
+		font-size: 1.2rem;
+		line-height: 1.5;
+		color: gainsboro;
+		font-family: 'DM Mono', monospace;
+	}
+	h1 {
+		color: gainsboro;
+		font-family: Ubuntu, sans-serif;
+		font-weight: 400;
+		font-size: 2.8rem;
+		line-height: 3.5;
+	}
+	p {
+		margin-bottom: 1.2rem;
+	}
+	h3 {
+		color: gainsboro;
+		font-family: Ubuntu, sans-serif;
+		font-weight: 400;
+		font-size: 1.8rem;
+		line-height: 3.5;
+	}
+	h2 {
+		color: gainsboro;
+		font-family: Ubuntu, sans-serif;
+		font-weight: 400;
+		font-size: 2rem;
+		line-height: 3.5;
+	}
+	
 </style>

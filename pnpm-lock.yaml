@@ -16,14 +16,8 @@ importers:
         version: 0.9.3(typescript@5.6.2)
       '@astrojs/tailwind':
         specifier: ^5.1.1
-        version: 5.1.1(astro@5.0.0-beta.1(rollup@4.21.3)(typescript@5.6.2))(tailwindcss@3.4.11)
-      '@fontsource-variable/dosis':
-        specifier: ^5.1.0
-        version: 5.1.0
-      '@fontsource-variable/yrsa':
-        specifier: ^5.1.0
-        version: 5.1.0
-      '@fontsource/barlow':
+        version: 5.1.1(astro@5.0.0-beta.2(rollup@4.21.3)(typescript@5.6.2))(tailwindcss@3.4.11)
+      '@fontsource/dm-mono':
         specifier: ^5.1.0
         version: 5.1.0
       '@fontsource/ubuntu':
@@ -36,8 +30,8 @@ importers:
         specifier: ^3.14.1
         version: 3.14.1
       astro:
-        specifier: 5.0.0-beta.1
-        version: 5.0.0-beta.1(rollup@4.21.3)(typescript@5.6.2)
+        specifier: 5.0.0-beta.2
+        version: 5.0.0-beta.2(rollup@4.21.3)(typescript@5.6.2)
       tailwindcss:
         specifier: ^3.4.11
         version: 3.4.11
@@ -280,14 +274,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@fontsource-variable/dosis@5.1.0':
-    resolution: {integrity: sha512-tbXQ3o0oQJ88zlTfqO8G/jy66CFC2RztgqVpcWmgW95/qy6cWTVRih3lzkc8QIwuKoG1BD4hRSBgZmX4U8Hc2Q==}
-
-  '@fontsource-variable/yrsa@5.1.0':
-    resolution: {integrity: sha512-BGwHK0od2aUmRmqmHQH52YAV7I16CJD8UgMi7MHHxplVyFLWTMP31GQC9mRpOpSHXA9TLQ8WgbnkLayF/oS2yw==}
-
-  '@fontsource/barlow@5.1.0':
-    resolution: {integrity: sha512-HXpoWJQX3RzVrUOpuZUBfWaoruLJ69B7Z3T9lZCWySEiEjvJ1FEwLz6BDJXx0lCrW8dEIf4UMq/xFs5IEn09ag==}
+  '@fontsource/dm-mono@5.1.0':
+    resolution: {integrity: sha512-cfowZUJJDHjgVFOEQmIn2KHtQ8LDXnTGgTTunUImzzg3Xf6V92MlYR/pmkqIt7lXq7lfP/pQZ9ph/9JeLDRsCQ==}
 
   '@fontsource/ubuntu@5.1.0':
     resolution: {integrity: sha512-0XG/HrFsfP1q3phf4QN8IO7tetd0zOZKHZSHcTnBuVoQedoo1wS/hXxY2FMZuqoG+mVfrXh+Q614MDVmQPJq2w==}
@@ -431,8 +419,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@oslojs/encoding@0.4.1':
-    resolution: {integrity: sha512-hkjo6MuIK/kQR5CrGNdAPZhS01ZCXuWDRJ187zh6qqF2+yMHZpD9fAYpX8q2bOO6Ryhl3XpCT6kUX76N8hhm4Q==}
+  '@oslojs/encoding@1.1.0':
+    resolution: {integrity: sha512-70wQhgYmndg4GCPxPPxPGevRKqTIJ2Nh4OkiMWmDAVYsTQ+Ta7Sq+rPevXyXGdzr30/qZBnyOalCszoMxlyldQ==}
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -656,8 +644,8 @@ packages:
   array-iterate@2.0.1:
     resolution: {integrity: sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==}
 
-  astro@5.0.0-beta.1:
-    resolution: {integrity: sha512-i5L+2tky+cYaLba/UX6KGe4oXGdlYfcPWCukT56FLUWLI4CsXqOL9QC/paUH7qG8jAnxdYnST/HtuyREtiYUhg==}
+  astro@5.0.0-beta.2:
+    resolution: {integrity: sha512-PJlq/pbUwme7PXsFiVCRmrQO3ANh/hnhoQ81vxguwHJOJDwEUOYurJ9JgCJIyMCvRvfOP6G3FKnp3Y640b0B/w==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -1409,9 +1397,6 @@ packages:
     resolution: {integrity: sha512-Xa4Nw17FS9ApQFJ9umLiJS4orGjm7ZzwUrwamcGQuHSzDyth9boKDaycYdDcZDuqYATXw4HFXgaqWTctW/v1HA==}
     engines: {node: '>=16 || 14 >=14.18'}
 
-  path-to-regexp@6.2.2:
-    resolution: {integrity: sha512-GQX3SSMokngb36+whdpRXE+3f9V8UzyAorlYvOGx87ufGHehNTn5lCxrKtLyZ4Yl/wEKnNnr98ZzOwwDZV5ogw==}
-
   picocolors@1.1.0:
     resolution: {integrity: sha512-TQ92mBOW0l3LeMeyLV6mzy/kWr8lkd/hp3mTg7wYK7zJhuBStmGMBG0BdeDZS/dZx1IukaX6Bk11zcln25o1Aw==}
 
@@ -2080,9 +2065,9 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/tailwind@5.1.1(astro@5.0.0-beta.1(rollup@4.21.3)(typescript@5.6.2))(tailwindcss@3.4.11)':
+  '@astrojs/tailwind@5.1.1(astro@5.0.0-beta.2(rollup@4.21.3)(typescript@5.6.2))(tailwindcss@3.4.11)':
     dependencies:
-      astro: 5.0.0-beta.1(rollup@4.21.3)(typescript@5.6.2)
+      astro: 5.0.0-beta.2(rollup@4.21.3)(typescript@5.6.2)
       autoprefixer: 10.4.20(postcss@8.4.45)
       postcss: 8.4.45
       postcss-load-config: 4.0.2(postcss@8.4.45)
@@ -2217,11 +2202,7 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
-  '@fontsource-variable/dosis@5.1.0': {}
-
-  '@fontsource-variable/yrsa@5.1.0': {}
-
-  '@fontsource/barlow@5.1.0': {}
+  '@fontsource/dm-mono@5.1.0': {}
 
   '@fontsource/ubuntu@5.1.0': {}
 
@@ -2338,7 +2319,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@oslojs/encoding@0.4.1': {}
+  '@oslojs/encoding@1.1.0': {}
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
@@ -2557,14 +2538,14 @@ snapshots:
 
   array-iterate@2.0.1: {}
 
-  astro@5.0.0-beta.1(rollup@4.21.3)(typescript@5.6.2):
+  astro@5.0.0-beta.2(rollup@4.21.3)(typescript@5.6.2):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
       '@astrojs/markdown-remark': 6.0.0-beta.1
       '@astrojs/telemetry': 3.1.0
       '@babel/types': 7.25.6
-      '@oslojs/encoding': 0.4.1
+      '@oslojs/encoding': 1.1.0
       '@rollup/pluginutils': 5.1.0(rollup@4.21.3)
       '@types/cookie': 0.6.0
       acorn: 8.12.1
@@ -2602,7 +2583,6 @@ snapshots:
       ora: 8.1.0
       p-limit: 6.1.0
       p-queue: 8.0.1
-      path-to-regexp: 6.2.2
       preferred-pm: 4.0.0
       prompts: 2.4.2
       rehype: 13.0.1
@@ -3571,8 +3551,6 @@ snapshots:
     dependencies:
       lru-cache: 10.4.3
       minipass: 7.1.2
-
-  path-to-regexp@6.2.2: {}
 
   picocolors@1.1.0: {}
 

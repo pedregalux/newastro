@@ -1,7 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { ClientRouter } from 'astro:transitions';	
+import { ClientRouter } from 'astro:transitions';
 
 interface Props {
 	title?: string;
@@ -15,14 +15,14 @@ const { title = 'Pedregalux web log', description = 'Internet ya no es el mismo'
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width, initial screen scale=1 0 auto 0" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/png" href="/favicon.png" />
 		<meta name="description" content={description} />
 		<title>{title}</title>
 		<ClientRouter transition:persist />
 	</head>
-	<body class="bg-gradient-to-br from-zinc-950 via-zinc-800 to-zinc-950">
+	<body class="bg-fixed bg-gradient-to-br from-zinc-950 via-zinc-800 to-zinc-950">
 		<Header />
 		<slot />
 		<Footer />

@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Sidebar from '../components/Sidebar.astro';
+const { frontmatter } = Astro.props;
+---
+
+
+<Layout>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-2 md:mt-20 text-pretty">
+        <div class="cuerpo ml-10 mr-5 md:ml-20 md:mr-10 md:px-10 col-span-3">
+            
+            <h2>{frontmatter.title}</h2>
+            <div class="text-pretty mt-5 mb-10 ml-10 mr-20">
+            <b class="text-pretty-white md:font-medium md:text-2xl">{frontmatter.description}</b>
+            </div>    
+            <slot />
+               
+        </div>
+    
+        <div>
+    
+<Sidebar />
+    
+        </div>
+    </div>

@@ -1,6 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Sidebar from '../components/Sidebar.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog'))
 ---
 
 <Layout>
@@ -10,7 +13,11 @@ import Sidebar from '../components/Sidebar.astro';
 
         <h2>Blog</h2>
 
-        <p>ya vienen...</p>
+        <ul>
+            {posts.map(post => (
+                <li><a href={`/blog/${post.id}`}>{post.data.title}</a></li>
+              ))}
+        </ul>
         
     </div>
 

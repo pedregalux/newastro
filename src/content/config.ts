@@ -1,23 +1,26 @@
-import { defineCollection, z } from "astro:content";
+import { defineCollection, z } from 'astro:content';
+import { glob } from 'astro/loaders';
 
 const blog = defineCollection({
-  type: "content",
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    date: z.coerce.date(),
-    draft: z.boolean().optional()
-  }),
-});
-
+  loader: glob({ pattern: "**\/*.md", base: "./src/pages/blog" }),
+    schema: z.object({
+      title: z.string(),
+      description: z.string(),
+      pubDate: z.coerce.date(),
+      draft: z.boolean().optional()
+    }),
+  });
+  
 const work = defineCollection({
-  type: "content",
-  schema: z.object({
-    company: z.string(),
-    role: z.string(),
-    date: z.coerce.date(),
-    draft: z.boolean().optional()
-  }),
-});
+    schema: z.object({
+      company: z.string(),
+      role: z.string(),
+      dateStart: z.coerce.date(),
+    }),
+  });
 
-export const collections = { blog, work };
+  export const collections = {
+    blog,
+    work
+  };
+

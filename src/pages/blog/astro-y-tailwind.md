@@ -5,7 +5,7 @@ pubDate: 2024-10-05
 description: 'Como Astro y Tailwind hacen interesante hacer web denuevo. Un largo proceso con un final feliz.'
 author: 'pedregalux'
 tags: ["astro", "tailwind", "alpinejs", "blog"]
-postimage: '../../images/astronauta.webp'
+postimage: '/images/astronauta.webp'
 ---
 
 

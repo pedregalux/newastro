@@ -5,9 +5,9 @@ pubDate: 2024-10-05
 description: 'Como Astro y Tailwind hacen interesante hacer web denuevo. Un largo proceso con un final feliz.'
 author: 'pedregalux'
 tags: ["astro", "tailwind", "alpinejs", "blog"]
+postimage: '/src/images/astronauta.webp'
 ---
 
-<img class="mx-auto mb-10 rounded-full" src="/astronauta.webp" alt="Astro, Tailwind y un nuevo blog" width="300"/>
 
 Esto es nerd, pero nerd. Hace muchos años, casi desde que salió, usé Wordpress en un blog. De hecho hice experimentos antes con algo que se llamaba BBLog o algo así. Todo era PHP, MySql, consiguiendo algún hosting gratis cuando la velocidad no era un tema. No existía YouTube, no teníamos redes sociales. Todavía no aparecía ni Fotolog ni Facebook. Siempre me asombro cuando recuerdo esa época y hago un recuento de como en tan pocos años todo se fue literalmente a la mierda y nos llenamos de servicios y productos monopólicos que son propiedad de un puñado de idiotas libertarios de San Francisco. No se me malentienda, no estoy en contra de la tecnología, sólo de ellos.
 

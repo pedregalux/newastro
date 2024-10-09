@@ -5,6 +5,7 @@ pubDate: 2024-10-05
 description: 'Los RSS nos permitieron ordenar la experiencia de leer cosas por la web, saber cuando hay algo nuevo,etc. Pero, todos esos sitios en los que tanta gente ha trabajado con amor para que usted los vea, ¿qué hacemos con ellos?'
 author: 'pedregalux'
 tags: ["RSS", "techs", "web"]
+postimage: ''
 ---
 
 En las décadas de los 90 y 2 mil lugares sucios, poco transitados y espacios de homeless en San Francisco fueron invadidos por empresas tecnológicas y cafés. Fue un tema bien reporteado y documentado. Como todo lo que en EE.UU. se hace grotescamente mal y feo al resto del mundo le encanta copiarlo, lo mismo pasó en cada ciudad del mundo donde aparecieron empresas relacionadas con la web y nuevas tecnologías.

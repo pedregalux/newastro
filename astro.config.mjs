@@ -1,14 +1,16 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig, passthroughImageService } from "astro/config";
+import tailwind from "@astrojs/tailwind";
 
-import tailwind from '@astrojs/tailwind';
+import alpinejs from "@astrojs/alpinejs";
 
-import alpinejs from '@astrojs/alpinejs';
+import netlify from "@astrojs/netlify";
 
-import netlify from '@astrojs/netlify';
-
-// https://astro.build/config
 export default defineConfig({
+  image: {
+    service: passthroughImageService(),
+  },
   integrations: [tailwind(), alpinejs()],
-  output: 'server',
-  adapter: netlify()
+  output: "server",
+  adapter: netlify(),
 });
+

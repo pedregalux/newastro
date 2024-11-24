@@ -1,13 +1,12 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: 'Astro, Tailwind y un nuevo blog'
-pubDate: 2024-10-05
-description: 'Como Astro y Tailwind hacen interesante hacer web denuevo. Un largo proceso con un final feliz.'
-author: 'pedregalux'
+title: "Astro, Tailwind y un nuevo blog"
+pubDate: 2024/10/05
+description: "Como Astro y Tailwind hacen interesante hacer web denuevo. Un largo proceso con un final feliz."
+author: "pedregalux"
 tags: ["astro", "tailwind", "alpinejs", "blog"]
-postimage: ''
+postimage: "/astronauta.webp"
 ---
-
 
 Esto es nerd, pero nerd. Hace muchos años, casi desde que salió, usé Wordpress en un blog. De hecho hice experimentos antes con algo que se llamaba BBLog o algo así. Todo era PHP, MySql, consiguiendo algún hosting gratis cuando la velocidad no era un tema. No existía YouTube, no teníamos redes sociales. Todavía no aparecía ni Fotolog ni Facebook. Siempre me asombro cuando recuerdo esa época y hago un recuento de como en tan pocos años todo se fue literalmente a la mierda y nos llenamos de servicios y productos monopólicos que son propiedad de un puñado de idiotas libertarios de San Francisco. No se me malentienda, no estoy en contra de la tecnología, sólo de ellos.
 
@@ -27,9 +26,8 @@ Aprender de todo es la forma, ya que la programación finalmente es una sola.
 
 ### Astro
 
-Creo que hace un año atrás supe por primera vez de [Astro](https://astro.build), pero sólo ahora en los últimos meses -primeros de 2024- lo empecé a usar en forma intensiva. Me hizo volver a la entretención de hacer páginas web. Combinado con [Tailwindcss](https://tailwindcss.com/docs/installation) es una mezcla que hace imposible que no den ganas de jugar un rato y probar cosas. Hoy es tan fácil subir un proyecto a la web para hacer pruebas desarrollando prácticamente con cualquier framework, que la posibilidad de hacer experimentos es infinita. Github o Gitlab y luego pages, Vercel o Cloudflare y ya está! Ahora la gente de Astro lanzó AstroDB, su versión para administrar bases SQL, transformándose en la competencia directa de Wordpress y todos los otros CMS. La diferencia de Astro es que es siempre más artesanal(en el sentido de usar las manos), original y evidentemente más rápido. 
+Creo que hace un año atrás supe por primera vez de [Astro](https://astro.build), pero sólo ahora en los últimos meses -primeros de 2024- lo empecé a usar en forma intensiva. Me hizo volver a la entretención de hacer páginas web. Combinado con [Tailwindcss](https://tailwindcss.com/docs/installation) es una mezcla que hace imposible que no den ganas de jugar un rato y probar cosas. Hoy es tan fácil subir un proyecto a la web para hacer pruebas desarrollando prácticamente con cualquier framework, que la posibilidad de hacer experimentos es infinita. Github o Gitlab y luego pages, Vercel o Cloudflare y ya está! Ahora la gente de Astro lanzó AstroDB, su versión para administrar bases SQL, transformándose en la competencia directa de Wordpress y todos los otros CMS. La diferencia de Astro es que es siempre más artesanal(en el sentido de usar las manos), original y evidentemente más rápido.
 
 Porqué es tan rápido. Astro carga la menor cantidad posible de javascript, por lo que es la idea inversa a las aplicaciones de página completa como React, Angular y las otras. El framework genera un carpeta dist, nada nuevo, sólo que está muy muy optimizada. A veces cuesta creerlo, pero funciona. La forma de desarrollar fomenta más el html común y corriente y el css -en mi caso tailwind-. Toma un tiempo acostumbrarse porque es un paradigma distinto, con cosas comunes como los componentes, layouts, etc., todo lo que siempre trae un framework frontend, sin embargo tiene cosas diferentes a un framework corriente y a los otros generadores de "sitios estáticos". En mi caso, que he hecho más cosas en frameworks como Django, es interesante porque es usar una plataforma para frontend y escarbar en ella para lograr funcionalidades propias del backend mientras en el trayecto me voy reencantando con el html y los estilos.
 
 Lo más interesante de esto es la idea que hay detrás de estos nuevos frameworks y librerías, me refiero a Astro, Tailwind y cosas como [htmx](https://htmx.org/docs/). Se ve una tendencia o un deseo de apuntar hacia la unificación del desarrollo web, por lo menos en algunos aspectos. Hay experiencias muy interesantes en la aplicación de htmx a proyectos existentes en que la gente involucrada hace notar la presencia de este enfoque y los beneficios que llegan cuando frontend y backend se trabajan en una forma más integral. Claro que puede ser un enfoque para un tipo de proyectos y para otros no, pero es algo que hace 3 años parecía como impensable y casi innombrable. Personalmente creo que en cualquier tipo de proyecto las personas deben trabajar lo más juntas posible, opinando e involucrándose en varios aspectos. Todos somos PM, es el dicho.
-

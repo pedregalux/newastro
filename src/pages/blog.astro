@@ -1,34 +1,23 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from '../layouts/Layout.astro'
+const allPosts = await Astro.glob('./blog/*.md');
 import Sidebar from '../components/Sidebar.astro';
-import { getCollection } from 'astro:content';
-
-const posts = (await getCollection('blog'))
+const pageTitle = "Blog";
+allPosts.sort(
+  (a, b) =>
+    Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate)
+);
 ---
-
-<Layout>
-
+<Layout pageTitle={pageTitle}>
 <div class="grid grid-cols-1 md:grid-cols-4 gap-2 md:mt-20 text-pretty">
     <div class="cuerpo ml-10 mr-5 md:ml-20 md:mr-10 md:px-10 col-span-3">
 
-        <h2>Blog</h2>
-
-        <ul>
-            {posts.map(post => (
-                <li>-> <a href={`/blog/${post.id}`}>{post.data.title}</a></li>
-              ))}
-        </ul>
-        
+      {allPosts.map((post) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
     </div>
-
-    <div>
-
-        <Sidebar />
-
-    </div>
+<div>
+  <Sidebar />
 </div>
-
+    
+  </div>
 </Layout>
 
-<style>
-</style>

@@ -12,7 +12,7 @@ const $$Blog = createComponent(async ($$result, $$props, $$slots) => {
   allPosts.sort(
     (a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate)
   );
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "Title": pageTitle }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="grid grid-cols-1 md:grid-cols-4 gap-2 md:mt-20 text-pretty"> <div class="cuerpo ml-10 mr-5 md:ml-20 md:mr-10 md:px-10 col-span-3"> ${allPosts.map((post) => renderTemplate`<li><a${addAttribute(post.url, "href")}>${post.frontmatter.title}</a></li>`)} </div> <div> ${renderComponent($$result2, "Sidebar", $$Sidebar, {})} </div> </div> ` })}`;
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": pageTitle }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="grid grid-cols-1 md:grid-cols-4 gap-2 md:mt-20 text-pretty"> <div class="cuerpo ml-10 mr-5 md:ml-20 md:mr-10 md:px-10 col-span-3"> ${allPosts.map((post) => renderTemplate`<li><a${addAttribute(post.url, "href")}>${post.frontmatter.title}</a></li>`)} </div> <div> ${renderComponent($$result2, "Sidebar", $$Sidebar, {})} </div> </div> ` })}`;
 }, "/home/felipe/Taller/newastro/src/pages/blog.astro", void 0);
 
 const $$file = "/home/felipe/Taller/newastro/src/pages/blog.astro";

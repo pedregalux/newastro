@@ -6,10 +6,9 @@ const blog = defineCollection({
   schema: ({ image }) =>
     z.object({
       title: z.string(),
-      description: z.string(),
       pubDate: z.coerce.date(),
-      postimage: image().refine((img) => img.width >= 1080),
-      draft: z.boolean().optional(),
+      description: z.string(),
+      postimage: image().optional(),
     }),
 });
 

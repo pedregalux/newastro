@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro'
+const allPosts = await Astro.glob('./blog/*.md');
+import Sidebar from '../components/Sidebar.astro';
+const pageTitle = "Blog";
+allPosts.sort(
+  (a, b) =>
+    Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate)
+);
+---
+<Layout title={pageTitle}>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-2 md:mt-20 text-pretty">
+    <div class="cuerpo ml-10 mr-5 md:ml-20 md:mr-10 md:px-10 col-span-3">
+
+      {allPosts.map((post) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
+    </div>
+<div>
+  <Sidebar />
+</div>
+    
+  </div>
+</Layout>
+

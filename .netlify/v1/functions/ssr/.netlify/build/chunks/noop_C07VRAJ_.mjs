@@ -1,4 +1,4 @@
-import { b as baseService } from './generic_Br8SKZtC.mjs';
+import { b as baseService } from './generic_DMQmE1Cn.mjs';
 
 const noopService = {
   ...baseService,

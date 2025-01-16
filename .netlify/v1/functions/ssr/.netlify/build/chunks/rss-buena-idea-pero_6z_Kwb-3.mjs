@@ -1,6 +1,6 @@
 /* empty css                        */
-import { c as createComponent, r as renderTemplate, a as renderComponent, u as unescapeHTML } from './astro/server_CzPDkCjp.mjs';
-import { $ as $$PostLayout } from './PostLayout_F63cX-af.mjs';
+import { e as createComponent, r as renderTemplate, i as renderComponent, u as unescapeHTML } from './astro/server_BYwAOejc.mjs';
+import { $ as $$PostLayout } from './PostLayout_ByBDoNkQ.mjs';
 
 const html = () => "";
 
@@ -8,7 +8,7 @@ const html = () => "";
 				const file = "/home/felipe/Taller/newastro/src/pages/blog/rss-buena-idea-pero.md";
 				const url = "/blog/rss-buena-idea-pero";
 				function rawContent() {
-					return "";
+					return "   \n                                        \n                                      \n                   \n                                                                                                                                                                                                                                             \n             \n   \n";
 				}
 				async function compiledContent() {
 					return await html();

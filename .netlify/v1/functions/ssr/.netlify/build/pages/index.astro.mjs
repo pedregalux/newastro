@@ -1,6 +1,6 @@
 /* empty css                                */
-import { c as createComponent, r as renderTemplate, a as renderComponent, b as createAstro, m as maybeRenderHead } from '../chunks/astro/server_CzPDkCjp.mjs';
-import { $ as $$Sidebar, a as $$Layout } from '../chunks/Sidebar_13OncO8c.mjs';
+import { e as createComponent, r as renderTemplate, i as renderComponent, h as createAstro, m as maybeRenderHead } from '../chunks/astro/server_BYwAOejc.mjs';
+import { $ as $$Sidebar, a as $$Layout } from '../chunks/Sidebar_C9AiCgNx.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Astro = createAstro();
@@ -28,7 +28,7 @@ Y si, obviamente, estamos programando y estudiando machinne learning siempre con
 </p> <p>Actualicé esto porque estoy usando Neovim el 100% de mi tiempo, antes puse un comentario sobre VSCodium, que es el VSCode sin telemetría. Es un editor muy bueno casi igual a VSCode, pero NeoVim es lo máximo, ya escribiré sobre él.</p> <hr class="border-zinc-700"> <p>
 * Hoy uso <a href="https://www.vivaldi.com/" target="_blank">Vivaldi</a>, no Firefox, y tiene partes de su <a href="https://vivaldi.com/blog/technology/why-isnt-vivaldi-browser-open-source/" target="_blank">código cerrado</a>, pero confío en ellos y quiero que les vaya bien! Este es un caso típico de los problemas que plantea el software libre. Creo que ellos tienen derecho a hacer su producto, siempre que sean transparentes sobre lo que te están entregando. En tecnología no todo es un asunto de licencia, hace mucho tiempo que no me gustan cosas de Mozilla (y otras si!) y es evidente como han dejado a Firefox botado. Por otro lado, me gusta la forma como la gente de <a href="https://vivaldi.com/es/for-a-better-web/" target="_blank">Vivaldi hace sus cosas</a> y el navegador es <a href="https://www.forbes.com/sites/barrycollins/2024/10/24/vivaldi-7-the-best-web-browser-just-got-even-better/" target="_blank">lejos el mejor</a>. Hoy lo uso para correo y web, algo que estaba en alguna versión de Mozilla previa a Firefox y que después se perdió.
 </p> </div> <div> ${renderComponent($$result2, "Sidebar", $$Sidebar, {})} </div> </div>` })}`;
-}, "/home/felipe/Taller/newastro/src/pages/index.astro", void 0);
+}, "/home/felipe/Taller/newastro/src/pages/index.astro", undefined);
 
 const $$file = "/home/felipe/Taller/newastro/src/pages/index.astro";
 const $$url = "";

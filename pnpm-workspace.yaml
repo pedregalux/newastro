@@ -1,3 +1,6 @@
 ignoredBuiltDependencies:
   - netlify-cli
   - unix-dgram
+
+onlyBuiltDependencies:
+  - sharp

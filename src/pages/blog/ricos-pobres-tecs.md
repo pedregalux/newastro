@@ -4,6 +4,7 @@ title: "Ricos, pobres y techs"
 pubDate: 2024/10/05
 description: "Los ricos y los artistas tienen un asunto freudiano con la pobreza. También las tech. Llegar a poner starbucks en barrios decadentes es parte de eso."
 postimage: ""
+topics: ["tecnología"]
 ---
 
 En las décadas de los 90 y 2 mil lugares sucios, poco transitados y espacios de homeless en San Francisco fueron invadidos por empresas tecnológicas y cafés. Fue un tema bien reporteado y documentado. Como todo lo que en EE.UU. se hace grotescamente mal y feo al resto del mundo le encanta copiarlo, lo mismo pasó en cada ciudad del mundo donde aparecieron empresas relacionadas con la web y nuevas tecnologías.

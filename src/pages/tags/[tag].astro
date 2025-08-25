@@ -1,0 +1,47 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+    return [
+        { params: { tag: 'neovim' } },
+        { params: { tag: 'nvim' } },
+        { params: { tag: 'python' } },
+        { params: { tag: 'rust' } },
+        { params: { tag: 'ruby' } },
+        { params: { tag: 'django' } },
+        { params: { tag: 'frameworks' } },
+        { params: { tag: 'golang' } },
+        { params: { tag: 'linux' } },
+        { params: { tag: 'productividad' } },
+        { params: { tag: 'herramientas' } },
+        { params: { tag: 'tutoriales' } },
+        { params: { tag: 'tips' } },
+        { params: { tag: 'software' } },
+        { params: { tag: 'opensource' } },
+        { params: { tag: 'astro' } },
+        { params: { tag: 'tailwind' } },
+        { params: { tag: 'htmx' } },
+        { params: { tag: 'cloud' } },
+        { params: { tag: 'ideas' } },
+        { params: { tag: 'inteligencia artificial' } },
+        { params: { tag: 'machine learning' } },
+        { params: { tag: 'data science' } },
+    ];
+
+}
+
+const { tag } = Astro.params;
+
+---
+
+<Layout title={`Posts de "${tag}"`}>
+    <h1 class="text-4xl font-bold mb-6">Posts de "{tag}"</h1>
+    <ul>
+        {/*
+          Aquí puedes agregar la lógica para filtrar y mostrar los posts
+          que coincidan con el tag proporcionado en la URL.
+          Por ejemplo, podrías usar Astro.glob para obtener todos los posts
+          y luego filtrarlos por el tag.
+        */}
+        <li>No hay posts de esto aún, vuelva la próxima semana!</li>
+    </ul>

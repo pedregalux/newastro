@@ -4,20 +4,24 @@ const allPosts = await Astro.glob('./blog/*.md');
 import Sidebar from '../components/Sidebar.astro';
 const pageTitle = "Blog";
 allPosts.sort(
-  (a, b) =>
-    Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate)
+    (a, b) =>
+        Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate)
 );
 ---
 <Layout title={pageTitle}>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-2 md:mt-20 text-pretty">
-    <div class="cuerpo ml-10 mr-5 md:ml-20 md:mr-10 md:px-10 col-span-3">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-2 md:mt-20 text-pretty">
+        <div class="cuerpo ml-10 mr-5 md:ml-20 md:mr-10 md:px-10 col-span-3">
+            <p class="text-pretty text-stone-500 text-sm">Estos posts siempre serán editados, nunca son definitivos, no tengo nada contra usted...</p>
+            {allPosts.map((post) => <p class="text-pretty text-stone-500">
+                <a href={post.url}>{post.frontmatter.title}</a><br>  
+                {post.frontmatter.pubDate}
+                ({post.frontmatter.topics})
+            </p>)}
+        </div>
+        <div>
+            <Sidebar />
+        </div>
 
-      {allPosts.map((post) => <li><a href={post.url}>{post.frontmatter.title}</a> / {post.frontmatter.pubDate}</li>)}
     </div>
-<div>
-  <Sidebar />
-</div>
-    
-  </div>
 </Layout>
 

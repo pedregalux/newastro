@@ -4,6 +4,7 @@ title: "Plasma por segunda vez"
 pubDate: 2025/07/19
 description: ""
 postimage: ""
+topics: ["plasma, kde, linux"]
 ---
 Tengo que escribir algo de Plasma. Estoy impactado por el nivel que el escritorio y el ambiente ha llegado a ser. Ahora, esto viene de una persona que "configura", es decir, que gusta de personalizar y configurar el software que usa. Sacar de la caja y funciona nunca ha servido conmigo. Me interesan las opciones, quiero que las expliciten, no que las escondan. Por eso me gustaba Opera, por eso mi browser es Vivaldi hace varios años.
 

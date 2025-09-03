@@ -1,6 +1,6 @@
 ---
 layout: "../../layouts/PostLayout.astro"
-title: "Hasta cuando?"
+title: "¿Hasta cuando?"
 pubDate: 2025/08/13
 description: "El increíble arte de revolucionar la tecnología, ver lo que nadie ve, cambiar el juego y mil cosas más, sólo en una par de horas"
 postimage: ""

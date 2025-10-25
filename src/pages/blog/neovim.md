@@ -4,7 +4,7 @@ title: "Neovim, todo lo bueno que digan es verdad"
 pubDate: 2024/11/02
 description: "No es fácil y hay un tiempo necesario para acostumbrarse y avanzar un poco, sin embargo cuando empiezas a despegar de verdad te gusta el editor. Es como en la antiguedad, cuando conocías un software y lo usabas con entusiasmo y dedicación, incluso con cariño."
 postimage: ""
-topics: ["neovim, nvim"]
+topics: ["neovim, nvim, lazyvim"]
 ---
 
 [Neovim](https://neovim.io) es un software famoso. Todos los programadores lo conocen, aunque sea de oídas. Famoso también es el nivel de fanatismo de sus usuarios, los consejos y la recomendación constante y sostenida de que "es un editor que vas a amar y te cambiará la vida". Lo mismo pasa con Emacs. Como usuario viejo de Linux conocía ámbos y los había usado, sólo por diversión, hace muchos años. Me sorprendió entonces por ejemplo la cantidad de cosas diferentes que tenía Emacs, incluyendo juegos y un psicoanalista (es cierto!), además de un browser, un módulo para escuchar música y ver videos, etc.. Lo más llamativo de VIM siempre era la campaña por los niños de Uganda y la economía de recursos. Una de las cosas que más llama la atención siempre de Linux es como se cargan las cosas, uno se acostumbra y al final una milésima de segundo se sufre.

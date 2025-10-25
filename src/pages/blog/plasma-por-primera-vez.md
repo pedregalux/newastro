@@ -2,7 +2,7 @@
 layout: "../../layouts/PostLayout.astro"
 title: "Plasma por segunda vez (y última)"
 pubDate: 2025/07/19
-description: ""
+description: "Otra experiencia fallida con KDE/Plasma, esta vez con la distro Linux de moda"
 postimage: ""
 topics: ["plasma, kde, linux"]
 ---

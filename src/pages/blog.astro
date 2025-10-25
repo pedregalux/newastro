@@ -11,12 +11,17 @@ allPosts.sort(
 <Layout title={pageTitle}>
     <div class="grid grid-cols-1 md:grid-cols-4 gap-2 md:mt-20 text-pretty">
         <div class="cuerpo ml-10 mr-5 md:ml-20 md:mr-10 md:px-10 col-span-3">
-            <p class="text-pretty text-stone-500 text-sm">Estos posts siempre serán editados, nunca son definitivos, no tengo nada contra usted...</p>
+            <p class="text-pretty text-stone-500">Estos posts siempre serán editados, nunca son definitivos, no tengo nada contra usted...</p>
             {allPosts.map((post) => <p class="text-pretty text-stone-500">
                 <a href={post.url}>{post.frontmatter.title}</a><br>  
                 {post.frontmatter.pubDate}
                 ({post.frontmatter.topics})
             </p>)}
+     --- 
+      <h5>Importantes, leer antes de quemar!</h5>
+      <p>
+        <a href="https://vivaldi.com/es/blog/sigue-explorando/" target="_blank">Opinión de Vivaldi, el equipo del browser, sobre una de las últimas estupideces de la inteligencia artificial para no pensar.</a>
+      </p>
         </div>
         <div>
             <Sidebar />

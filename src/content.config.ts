@@ -1,0 +1,28 @@
+import { defineCollection } from "astro:content";
+import { glob } from "astro/loaders";
+import { z } from "astro/zod";
+
+const blog = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/pages/blog" }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      pubDate: z.coerce.date(),
+      description: z.string(),
+      topics: z.array(z.string()).optional().default([]),
+      postimage: image().optional(),
+    }),
+});
+
+// const work = defineCollection({
+//   schema: z.object({
+//     company: z.string(),
+//     role: z.string(),
+//     dateStart: z.coerce.date(),
+//   }),
+// });
+
+export const collections = {
+  blog,
+  // work,
+};

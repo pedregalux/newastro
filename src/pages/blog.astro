@@ -1,7 +1,22 @@
 ---
 import Layout from '../layouts/Layout.astro';
-const allPosts = await Astro.glob('./blog/*.md');
 import Sidebar from '../components/Sidebar.astro';
+
+interface Frontmatter {
+    title: string;
+    pubDate: string;
+    topics: string;
+}
+
+interface Post {
+    url: string;
+    frontmatter: Frontmatter;
+}
+
+const allPosts = Object.values(
+    import.meta.glob<Post>('./blog/*.md', { eager: true })
+);
+
 const pageTitle = "Blog";
 allPosts.sort(
     (a, b) =>
@@ -13,11 +28,10 @@ allPosts.sort(
         <div class="cuerpo ml-10 mr-5 md:ml-20 md:mr-10 md:px-10 col-span-3">
             <p class="text-pretty text-stone-500">Estos posts siempre serán editados, nunca son definitivos, no tengo nada contra usted...</p>
             {allPosts.map((post) => <p class="text-pretty text-stone-500">
-                <a href={post.url}>{post.frontmatter.title}</a><br>  
+                <a href={post.url}>{post.frontmatter.title}</a><br>
                 {post.frontmatter.pubDate}
                 ({post.frontmatter.topics})
             </p>)}
-     --- 
       <!-- <h5>Importantes, leer antes de quemar!</h5> -->
       <!-- <p> -->
       <!--   <a href="https://vivaldi.com/es/blog/sigue-explorando/" target="_blank">Opinión de Vivaldi, el equipo del browser, sobre una de las últimas estupideces de la inteligencia artificial para no pensar.</a> -->

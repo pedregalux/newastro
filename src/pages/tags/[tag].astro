@@ -1,6 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
     return [
         { params: { tag: 'neovim' } },
@@ -40,8 +42,9 @@ const { tag } = Astro.params;
         {/*
           Aquí puedes agregar la lógica para filtrar y mostrar los posts
           que coincidan con el tag proporcionado en la URL.
-          Por ejemplo, podrías usar Astro.glob para obtener todos los posts
+          Por ejemplo, podrías usar import.meta.glob para obtener todos los posts
           y luego filtrarlos por el tag.
         */}
         <li>No hay posts de esto aún, vuelva la próxima semana!</li>
     </ul>
+</Layout>

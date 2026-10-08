@@ -2,7 +2,7 @@
 layout: "../../layouts/PostLayout.astro"
 title: "Leyendo a Fisher se me ocurre"
 pubDate: 2026/08/15
-description: "Leyendo a Fisher se me ocurre"
+description: "Texto que no va a ningún lado"
 postimage: ""
 topics: ["política, historia"]
 ---

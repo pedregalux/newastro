@@ -9,5 +9,11 @@ ignoredBuiltDependencies:
   - netlify-cli
   - unix-dgram
 
+minimumReleaseAgeExclude:
+  - '@astrojs/internal-helpers@0.10.3'
+  - '@astrojs/markdown-satteri@0.3.6'
+  - astro@7.2.3
+  - '@astrojs/netlify@8.2.2'
+
 onlyBuiltDependencies:
   - sharp
